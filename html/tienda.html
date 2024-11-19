@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Cueva de la Telaraña</title>
+  <title>La Telaraña</title>
   <link rel="stylesheet" href="../CSS/tienda.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
       </div>
       <ul class="nav-links">
         <li><a href="#productos">Productos</a></li>
-        <li><a href="#carrito">Carrito</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -23,7 +23,7 @@
 
   <!-- Título Principal -->
   <section class="title-section">
-    <h1>La Cueva de la Telaraña</h1>
+    <h1>La Telaraña</h1>
     <p>Un lugar para los fans más fieles, con productos exclusivos y diseño único.</p>
   </section>
 
@@ -48,28 +48,28 @@
         <img src="camiseta1.jpg" alt="Camiseta Relax Fit" class="product-image">
         <h4>Camiseta Oficial</h4>
         <p class="product-price">34.99 €</p>
-        <a href="camiseta.html" class="btn">Comprar</a>
+        <button onclick="addToCart('Camiseta Oficial', 34.99)">Añadir al Carrito</button>
       </div>
       <!-- Producto 2 -->
       <div class="product-card">
         <img src="sudadera1.jpg" alt="Sudadera Edición Limitada" class="product-image">
         <h4>Sudadera Edición Limitada</h4>
         <p class="product-price">42.99 €</p>
-        <a href="sudadera.html" class="btn">Comprar</a>
+        <button onclick="addToCart('Sudadera Edición Limitada', 42.99)">Añadir al Carrito</button>
       </div>
       <!-- Producto 3 -->
       <div class="product-card">
         <img src="gorra1.jpg" alt="Gorra Exclusiva" class="product-image">
         <h4>Gorra Exclusiva</h4>
         <p class="product-price">24.99 €</p>
-        <a href="gorra.html" class="btn">Comprar</a>
+        <button onclick="addToCart('Gorra Exclusiva', 24.99)">Añadir al Carrito</button>
       </div>
       <!-- Producto 4 -->
       <div class="product-card">
         <img src="taza1.jpg" alt="Taza de Colección" class="product-image">
         <h4>Taza de Colección</h4>
         <p class="product-price">12.99 €</p>
-        <a href="taza.html" class="btn">Comprar</a>
+        <button onclick="addToCart('Taza de Colección', 12.99)">Añadir al Carrito</button>
       </div>
     </div>
   </section>
@@ -78,5 +78,24 @@
   <footer class="footer">
     <p>&copy; 2024 La Cueva de la Telaraña. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Script para funcionalidad del carrito -->
+  <script>
+    // Función para añadir productos al carrito
+    function addToCart(productName, productPrice) {
+      const product = { name: productName, price: productPrice };
+
+      // Obtener carrito del LocalStorage
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Añadir producto al carrito
+      cart.push(product);
+
+      // Guardar carrito actualizado en LocalStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      alert(`${productName} ha sido añadido al carrito.`);
+    }
+  </script>
 </body>
 </html>
