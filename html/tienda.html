@@ -3,73 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merch Oficial</title>
+  <title>La Cueva de la Telaraña</title>
   <link rel="stylesheet" href="../CSS/tienda.css">
 </head>
 <body>
-  <!-- Inicio destacado -->
-  <header class="hero-section">
-    <div class="hero-content">
-      <h1>Bienvenido a la Tienda Oficial</h1>
-      <p>Descubre productos exclusivos diseñados para los verdaderos fans.</p>
-      <a href="#productos" class="hero-btn">Explorar Tienda</a>
-    </div>
+  <!-- Encabezado -->
+  <header class="main-header">
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#carrito">Carrito</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Sección de Merchandising -->
-  <section id="productos" class="merch-section">
-    <!-- Cabecera de Merch -->
-    <div class="merch-header">
-      <h2>Merch Oficial</h2>
-      <p>Explora nuestra línea de productos exclusivos para verdaderos fans. Desde ropa hasta accesorios únicos.</p>
-    </div>
+  <!-- Título Principal -->
+  <section class="title-section">
+    <h1>La Cueva de la Telaraña</h1>
+    <p>Un lugar para los fans más fieles, con productos exclusivos y diseño único.</p>
+  </section>
 
-    <!-- Navegación por categorías -->
-    <div class="merch-nav">
-      <button class="nav-btn active">Todo</button>
-      <button class="nav-btn">Ropa</button>
-      <button class="nav-btn">Accesorios</button>
-      <button class="nav-btn">Edición Limitada</button>
+  <!-- Video Central -->
+  <section class="video-section">
+    <div class="video-container">
+      <video autoplay muted loop class="background-video">
+        <source src="../img/108458-680697604_small.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+      </video>
     </div>
+  </section>
 
-    <!-- Cuadrícula de productos -->
+  <!-- Productos -->
+  <section id="productos" class="products-section">
+    <h2>Merch Oficial</h2>
+    <p>Explora nuestra colección de ropa, accesorios y ediciones limitadas.</p>
+
     <div class="product-grid">
       <!-- Producto 1 -->
       <div class="product-card">
-        <img src="botella.jpg" alt="Botella Oficial" class="product-image">
-        <h3 class="product-name">Botella Oficial</h3>
-        <p class="product-price">$15.00</p>
-        <a href="botella.html" class="btn">Comprar</a>
+        <img src="camiseta1.jpg" alt="Camiseta Relax Fit" class="product-image">
+        <h4>Camiseta Oficial</h4>
+        <p class="product-price">34.99 €</p>
+        <a href="camiseta.html" class="btn">Comprar</a>
       </div>
       <!-- Producto 2 -->
       <div class="product-card">
-        <img src="taza.jpg" alt="Taza Exclusiva" class="product-image">
-        <h3 class="product-name">Taza Exclusiva</h3>
-        <p class="product-price">$10.00</p>
-        <a href="taza.html" class="btn">Comprar</a>
+        <img src="sudadera1.jpg" alt="Sudadera Edición Limitada" class="product-image">
+        <h4>Sudadera Edición Limitada</h4>
+        <p class="product-price">42.99 €</p>
+        <a href="sudadera.html" class="btn">Comprar</a>
       </div>
       <!-- Producto 3 -->
       <div class="product-card">
-        <img src="jersey.jpg" alt="Jersey Edición Limitada" class="product-image">
-        <h3 class="product-name">Jersey Edición Limitada</h3>
-        <p class="product-price">$35.00</p>
-        <a href="jersey.html" class="btn">Comprar</a>
+        <img src="gorra1.jpg" alt="Gorra Exclusiva" class="product-image">
+        <h4>Gorra Exclusiva</h4>
+        <p class="product-price">24.99 €</p>
+        <a href="gorra.html" class="btn">Comprar</a>
       </div>
-    </div>
-
-    <!-- Botón para más productos -->
-    <div class="view-more">
+      <!-- Producto 4 -->
       <div class="product-card">
-        <h3>Ver más productos</h3>
-        <p>Explora nuestra tienda completa y encuentra más artículos exclusivos.</p>
-        <a href="merch.html" class="btn">Ver más</a>
+        <img src="taza1.jpg" alt="Taza de Colección" class="product-image">
+        <h4>Taza de Colección</h4>
+        <p class="product-price">12.99 €</p>
+        <a href="taza.html" class="btn">Comprar</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2024 Tu Marca. Todos los derechos reservados.</p>
+    <p>&copy; 2024 La Cueva de la Telaraña. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
