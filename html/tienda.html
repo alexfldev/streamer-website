@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Telaraña</title>
   <link rel="stylesheet" href="../CSS/tienda.css">
+  <link rel="shortcut icon" href="/img/Logos.png" type="image/png">
 </head>
 <body>
   <!-- Encabezado -->
   <header class="main-header">
     <nav class="nav-bar">
       <div class="logo">
-        <img src="emotes 8patas" alt="Logo" />
+        <img src="/img/Necesito_Descansar (1).jpg" alt="Logo" />
       </div>
       <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>  
+        <li><a href="/inicio.html">Inicio</a></li>  
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -77,24 +78,6 @@
   <footer class="footer">
     <p>&copy; 2024 La Cueva de la Telaraña. Todos los derechos reservados.</p>
   </footer>
-
-  <!-- Script para funcionalidad del carrito -->
-  <script>
-    // Función para añadir productos al carrito
-    function addToCart(productName, productPrice) {
-      const product = { name: productName, price: productPrice };
-
-      // Obtener carrito del LocalStorage
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-      // Añadir producto al carrito
-      cart.push(product);
-
-      // Guardar carrito actualizado en LocalStorage
-      localStorage.setItem('cart', JSON.stringify(cart));
-
-      alert(`${productName} ha sido añadido al carrito.`);
-    }
-  </script>
+  
 </body>
 </html>
