@@ -27,7 +27,7 @@
   <section class="hero" id="inicio">
     <video autoplay muted loop class="video-bg">
       <source src="img/144761-785265038_small.mp4" type="video/mp4">
-      Tu navegador no soporta la reproducción de videos.
+      
     </video>
   
     <div class="hero-content">
@@ -62,7 +62,7 @@
     </div>
   </section>
 
-  <!-- Streaming -->
+  <!-- Streaming  no funcionable de momento-->
   <section class="stream" id="stream">
     <div class="stream-header">
       <h2>🎥 Mi Streaming</h2>
@@ -84,7 +84,7 @@
     </div>
   </section>
 
-  <!-- Merchandising -->
+  <!-- Merch -->
   <section class="merch" id="merch">
     <h2>Merchandising</h2>
     <p>Explora mi línea de ropa exclusiva para verdaderos fanáticos.</p>
@@ -119,19 +119,38 @@
 </section>
 
 
-  <!-- Contacto -->
-  <section class="contact" id="contact">
-    <h2>Contacto</h2>
-    <p style="text-align: center;">¿Tienes preguntas o quieres colaborar? Escríbeme.</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Tu Nombre" required>
-      <input type="email" placeholder="Tu Correo Electrónico" required>
-      <textarea placeholder="Tu Mensaje" required></textarea>
-      <button type="submit" class="cta-button">Enviar</button>
-    </form>
-  </section>
+ <!-- Contacto -->
+<section class="contact" id="contact">
+  <h2>Contacto</h2>
+  <p style="text-align: center;">¿Tienes preguntas o quieres colaborar? Escríbeme.</p>
+  
+  <form class="contact-form" action="enviar_formulario.php" method="POST">
+    <div class="form-group">
+     
+      <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+    </div>
+    
+    <div class="form-group">
+     
+      <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+    </div>
+    
+    <div class="form-group">
 
-  <!-- Footer -->
+      <input type="text" id="subject" name="subject" placeholder="Introduce el asunto" required>
+    </div>
+    
+    <div class="form-group">
+     
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+    </div>
+    
+    <button type="submit" class="cta-button">Enviar</button>
+  </form>
+</section>
+
+
+  <!-- Pie de paaginar -->
   <footer>
     <div class="footer-content">
       <p>&copy;  2024 8patas. Todos los derechos reservados. (+34 673728910)</p>
