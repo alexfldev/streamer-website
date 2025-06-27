@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>8patas - Streamer y Creador</title>
   <link rel="stylesheet" href="css/inicio.css">
-  <link rel="shortcut icon" href="img/Logos.png" type="image/png">
+  <link rel="icon" href="img/Logos.png" type="image/png">
 </head>
 <body>
+
   <!-- Encabezado -->
   <header class="header">
     <div class="logo">
-      <img src="img/Necesito_Descansar (1).jpg" alt="8patas Logo">
+      <img src="img/Necesito_Descansar.jpg" alt="8patas Logo">
     </div>
     <nav>
       <ul class="navbar">
@@ -24,12 +25,12 @@
     </nav>
   </header>
 
+  <!-- Sección principal -->
   <section class="hero" id="inicio">
     <video autoplay muted loop class="video-bg">
       <source src="img/144761-785265038_small.mp4" type="video/mp4">
-      
     </video>
-  
+
     <div class="hero-content">
       <h1>¡Bienvenido a <span>8patas!</span></h1>
       <p>Si te unes al directo, ¡te regalo una empanada! 🥟</p>
@@ -62,23 +63,21 @@
     </div>
   </section>
 
-  <!-- Streaming  no funcionable de momento-->
+  <!-- Streaming -->
   <section class="stream" id="stream">
     <div class="stream-header">
       <h2>🎥 Mi Streaming</h2>
       <p>Disfruta de los mejores momentos de mis directos y únete a la comunidad de <strong>8patas</strong>.</p>
       <div class="video-clips-container">
         <iframe
-          src="https://player.twitch.tv/?channel=8patas&parent=yourwebsite.com"
-          frameborder="0"
-          allowfullscreen="true"
-          scrolling="no"
+          src="https://player.twitch.tv/?channel=8patas&parent=8patas.com"
+          allowfullscreen
           class="video-clips"
+          title="Twitch de 8patas"
         ></iframe>
       </div>
-      
-    
-    
+    </div>
+
     <div class="stream-action">
       <a href="https://www.twitch.tv/8patas" target="_blank" class="cta-button">Únete al Canal</a>
     </div>
@@ -89,71 +88,60 @@
     <h2>Merchandising</h2>
     <p>Explora mi línea de ropa exclusiva para verdaderos fanáticos.</p>
     <div class="merch-cards">
-        <div class="card">
-            <img src="img/botella.png" alt="Botella Oficial" width="158" height="158">
-            <h3>Botella Oficial</h3>
-            <p>Disponible en varios colores y con diseño exclusivo.</p>
-            <button class="cta-button">Comprar</button>
-        </div>
-        <div class="card">
-            <img src="img/8PATAS TAZAS.png" alt="Taza Oficial" width="250" height="250">
-            <h3>Taza</h3>
-            <p>Perfecta para disfrutar tus streams favoritos con estilo.</p>
-            <button class="cta-button">Comprar</button>
-        </div>
-        <div class="card">
-            <img src="img/hadesjoodie.png" alt="Jersey Oficial" width="250" height="250">
-            <h3>Jersey</h3>
-            <p>Edición especial para verdaderos fans, solo por tiempo limitado.</p>
-            <button class="cta-button">Comprar</button>
-        </div>
+      <div class="card">
+        <img src="img/botella.png" alt="Botella Oficial" width="158" height="158">
+        <h3>Botella Oficial</h3>
+        <p>Disponible en varios colores y con diseño exclusivo.</p>
+        <button class="cta-button">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="img/8PATASTAZAS.png" alt="Taza Oficial" width="250" height="250">
+        <h3>Taza</h3>
+        <p>Perfecta para disfrutar tus streams favoritos con estilo.</p>
+        <button class="cta-button">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="img/hadesjoodie.png" alt="Jersey Oficial" width="250" height="250">
+        <h3>Jersey</h3>
+        <p>Edición especial para verdaderos fans, solo por tiempo limitado.</p>
+        <button class="cta-button">Comprar</button>
+      </div>
     </div>
-   <!-- Botón para más productos -->
-<div class="view-more">
-  <div class="product-item">
-      <a href="html/tienda.html" class="btn">Ver más productos</a>
-  </div>
-</div>
 
-</div>
-</section>
-
-
- <!-- Contacto -->
-<section class="contact" id="contact">
-  <h2>Contacto</h2>
-  <p style="text-align: center;">¿Tienes preguntas o quieres colaborar? Escríbeme.</p>
-  
-  <form class="contact-form" action="enviar_formulario.php" method="POST">
-    <div class="form-group">
-     
-      <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+    <!-- Botón para más productos -->
+    <div class="view-more">
+      <div class="product-item">
+        <a href="html/tienda.html" class="btn">Ver más productos</a>
+      </div>
     </div>
-    
-    <div class="form-group">
-     
-      <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
-    </div>
-    
-    <div class="form-group">
+  </section>
 
-      <input type="text" id="subject" name="subject" placeholder="Introduce el asunto" required>
-    </div>
-    
-    <div class="form-group">
-     
-      <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
-    </div>
-    
-    <button type="submit" class="cta-button">Enviar</button>
-  </form>
-</section>
+  <!-- Contacto -->
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <p style="text-align: center;">¿Tienes preguntas o quieres colaborar? Escríbeme.</p>
 
+    <form class="contact-form" action="enviar_formulario.php" method="POST">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="subject" name="subject" placeholder="Introduce el asunto" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+      </div>
+      <button type="submit" class="cta-button">Enviar</button>
+    </form>
+  </section>
 
-  <!-- Pie de pagina -->
+  <!-- Pie de página -->
   <footer>
     <div class="footer-content">
-      <p>&copy;  2024 8patas. Todos los derechos reservados. (+34 673728910)</p>
+      <p>&copy; 2024 8patas. Todos los derechos reservados. (+34 673728910)</p>
       <div class="social-links">
         <a href="https://www.twitch.tv/8patas">Twitch</a>
         <a href="https://www.youtube.com/@8patas452">YouTube</a>
